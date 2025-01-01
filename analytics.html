@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Chirag social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+      <nav>
+            <div class="container">
+                <h2 class="logo">Socialite</h2>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input
+                    type="search"
+                    placeholder="Search for creators, inspirations and projects"
+                    />
+                </div>
+                <div class="create">
+                    <label class="btn btn-primary" for="create-post">Create</label>
+                    <div class="profile-pic">
+                        <img src="images/profile-8.jpg" alt="pic 1" />
+                    </div>
+                </div>
+            </div>
+      </nav>
+
+      <main>
+          <div class="container">
+              <div class="left">
+                  <a class="profile">
+                      <div class="profile-pic">
+                        <img src="./images/profile-8.jpg">
+                      </div>
+                      <div class="handle">
+                          <h4>Abhishek Ojha</h4>
+                          <p class="text-muted">@abhishek</p>
+                      </div>
+                  </a>
+                  <div class="sidebar">
+                    <a href="index.html" class="menu-item">
+                      <span><i class="uil uil-home"></i></span> <h3>Home</h3>
+                    </a>
+                    <a href="explore.html" class="menu-item ">
+                      <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a href="notification.html" class="menu-item" id="notifications">
+                      <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
+                      <div class="notifications-popup">
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-10.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Abigail Willey</b> accepted your friend request
+                                  <small class="text-muted">2 DAYS AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-11.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Varun Nair</b> commented on your post
+                                  <small class="text-muted">1 HOUR AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-12.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Marry Opmong</b> and 210 other liked your post
+                                  <small class="text-muted">4 MINUTES AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-13.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Wilson Fisk</b> started following you
+                                  <small class="text-muted"> 11 HOURS AGO</small>
+                              </div>
+                          </div>
+                      </div>
+                    </a>
+                    <a href="Messages.html" class="menu-item" id="messages-notifications">
+                        <i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a href="bookmarks.html" class="menu-item ">
+                      <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
+                    </a>
+                    <a href="analytics.html" class="menu-item ">
+                      <span><i class="uil uil-analytics"></i></span> <h3>Analytics</h3>
+                    </a>
+                    <a href="theme.html" class="menu-item ">
+                      <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
+                    </a>
+                    <a href="settings.html" class="menu-item ">
+                      <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>
+                    </a>
+                    
+                    <label class="btn btn-primary" for="create-post">Create Post</label>
+                </div>
+              </div>
+              <div class="middle">
+                  <!-- Analytics Section -->
+<div id="analytics-page" class="container">
+    <div class="analytics-header">
+        <h2>Page Analytics</h2>
+    </div>
+
+    <div class="analytics-cards">
+        <!-- Card 1: Total Users -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Total Users</h4>
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">1,230</p>
+                <small>+150 users this month</small>
+            </div>
+        </div>
+
+        <!-- Card 2: Total Posts -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Total Posts</h4>
+                <i class="fa fa-post"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">9,456</p>
+                <small>+220 posts this month</small>
+            </div>
+        </div>
+
+        <!-- Card 3: Engagement Rate -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Engagement Rate</h4>
+                <i class="fa fa-chart-line"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">15.4%</p>
+                <small>+2.5% this month</small>
+            </div>
+        </div>
+
+        <!-- Card 4: Comments -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Comments</h4>
+                <i class="fa fa-comments"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">7,890</p>
+                <small>+300 comments this month</small>
+            </div>
+        </div>
+
+        <!-- Card 5: Likes -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Likes</h4>
+                <i class="fa fa-thumbs-up"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">28,675</p>
+                <small>+1,000 likes this month</small>
+            </div>
+        </div>
+
+        <!-- Card 6: Active Users -->
+        <div class="analytics-card">
+            <div class="card-header">
+                <h4>Active Users</h4>
+                <i class="fa fa-user-check"></i>
+            </div>
+            <div class="card-body">
+                <p class="analytics-value">850</p>
+                <small>+100 active this month</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dummy Charts or Graphs can be added below the cards (optional) -->
+    <div class="analytics-charts">
+        <div class="chart-container">
+            <h4>Engagement Over Time</h4>
+            <!-- Dummy Chart (you can add libraries like Chart.js here) -->
+            <canvas id="engagement-chart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h4>Posts vs Comments</h4>
+            <!-- Dummy Chart (you can add libraries like Chart.js here) -->
+            <canvas id="posts-comments-chart"></canvas>
+        </div>
+    </div>
+</div>
+
+              </div>
+              
+
+
+              <div class="right">
+                  <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <span><i class="uil uil-edit"></i></span>
+                    </div>
+  
+                    <div class="search-bar">
+                        <span><i class="uil uil-search"></i></span>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+  
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-17.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Kareena Joshua</h5>
+                            <p class="text-muted">Just woke up bruh..</p>
+                        </div>
+                    </div>                             
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-18.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Dan Smith</h5>
+                            <p class="text-bold">2 New Messages</p>
+                        </div>
+                    </div>                             
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-15.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Chris Brown</h5>
+                            <p class="text-muted">Lol u right</p>
+                        </div>
+                    </div>                             
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-14.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Lana Rose</h5>
+                            <p class="text-bold">Birthday tomorrow!!</p>
+                        </div>
+                    </div>                             
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-11.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Varun Nair</h5>
+                            <p class="text-muted">Ssup?</p>
+                        </div>
+                    </div>                             
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-1.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Jahnvi Doifode</h5>
+                            <p class="text-bold">3 New Messages</p>
+                        </div>
+                    </div>                                                        
+                </div>
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-13.jpg">
+                            </div>
+                            <div>
+                                <h5>Wilson Fisk</h5>
+                                <p class="text-muted">8 mutual friends</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-20.jpg">
+                            </div>
+                            <div>
+                                <h5>Srishti Tirkey</h5>
+                                <p class="text-muted">2 mutual friends</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-5.jpg">
+                            </div>
+                            <div>
+                                <h5>Christ Kahea</h5>
+                                <p class="text-muted">1 mutual friend</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+            
+              </div> 
+
+
+               
+              </div>
+          </div>
+      </main>
+
+        <script src="index.js"></script>
+  </body>
+  
+</html>

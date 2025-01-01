@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Chirag social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+      <nav>
+            <div class="container">
+                <h2 class="logo">Socialite</h2>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input
+                    type="search"
+                    placeholder="Search for creators, inspirations and projects"
+                    />
+                </div>
+                <div class="create">
+                    <label class="btn btn-primary" for="create-post">Create</label>
+                    <div class="profile-pic">
+                        <img src="images/profile-8.jpg" alt="pic 1" />
+                    </div>
+                </div>
+            </div>
+      </nav>
+
+      <main>
+          <div class="container">
+              <div class="left">
+                  <a class="profile">
+                      <div class="profile-pic">
+                        <img src="./images/profile-8.jpg">
+                      </div>
+                      <div class="handle">
+                          <h4>Abhishek Ojha</h4>
+                          <p class="text-muted">@abhishek</p>
+                      </div>
+                  </a>
+                  <div class="sidebar">
+                    <a href="index.html" class="menu-item">
+                      <span><i class="uil uil-home"></i></span> <h3>Home</h3>
+                    </a>
+                    <a href="explore.html" class="menu-item ">
+                      <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a href="notification.html" class="menu-item" id="notifications">
+                      <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
+                      <div class="notifications-popup">
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-10.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Abigail Willey</b> accepted your friend request
+                                  <small class="text-muted">2 DAYS AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-11.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Varun Nair</b> commented on your post
+                                  <small class="text-muted">1 HOUR AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-12.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Marry Opmong</b> and 210 other liked your post
+                                  <small class="text-muted">4 MINUTES AGO</small>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="profile-pic">
+                                  <img src="./images/profile-13.jpg" >
+                              </div>
+                              <div class="notification-body">
+                                  <b>Wilson Fisk</b> started following you
+                                  <small class="text-muted"> 11 HOURS AGO</small>
+                              </div>
+                          </div>
+                      </div>
+                    </a>
+                    <a href="Messages.html" class="menu-item active" id="messages-notifications">
+                        <i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a href="bookmarks.html" class="menu-item ">
+                      <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
+                    </a>
+                    <a href="analytics.html" class="menu-item ">
+                      <span><i class="uil uil-analytics"></i></span> <h3>Analytics</h3>
+                    </a>
+                    <a href="theme.html" class="menu-item ">
+                      <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
+                    </a>
+                    <a href="settings.html" class="menu-item ">
+                      <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>
+                    </a>
+                    
+                    <label class="btn btn-primary" for="create-post">Create Post</label>
+                </div>
+              </div>
+              <div class="middle">
+                  <section id="messages-page" class="page-section">
+    <div class="messages">
+    <div class="heading">
+        <h4>Messages</h4>
+        <span><i class="uil uil-edit"></i></span>
+    </div>
+
+    <div class="search-bar">
+        <span><i class="uil uil-search"></i></span>
+        <input type="search" placeholder="Search Messages" id="message-search">
+    </div>
+
+    <div class="category">
+        <h6 class="active" data-category="primary">Primary</h6>
+        <h6 data-category="general">General</h6>
+        <h6 class="message-requests" data-category="requests">Requests (7)</h6>
+    </div>
+
+    <div id="message-list" class="message-list">
+        <!-- Dynamic message items will be inserted here -->
+    </div>
+
+    <!-- Chat Window (Initially hidden) -->
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <span id="chat-username">Chat</span>
+            <button id="back-button">Back</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+              <div class="right">
+                  
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-13.jpg">
+                            </div>
+                            <div>
+                                <h5>Wilson Fisk</h5>
+                                <p class="text-muted">8 mutual friends</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-20.jpg">
+                            </div>
+                            <div>
+                                <h5>Srishti Tirkey</h5>
+                                <p class="text-muted">2 mutual friends</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/profile-5.jpg">
+                            </div>
+                            <div>
+                                <h5>Christ Kahea</h5>
+                                <p class="text-muted">1 mutual friend</p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+            
+              </div> 
+
+
+               
+              </div>
+          </div>
+      </main>
+
+        <script src="index.js"></script>
+  </body>
+  
+</html>
